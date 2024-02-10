@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "vowmod",
+	"version": "${version}",
+	"name": "VowMod",
+	"description": "This is a mod for testing the mechanics of the vow of the disciple raid.",
+	"authors": [
+		"glipR"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/vowmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.glipr.vowmod.VowMod"
+		],
+		"client": [
+			"net.glipr.vowmod.VowModClient"
+		],
+		"fabric-datagen": [
+			"net.glipr.vowmod.VowModDataGenerator"
+		]
+	},
+	"mixins": [
+		"vowmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.6",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
